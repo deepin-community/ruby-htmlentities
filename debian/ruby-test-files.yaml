@@ -1,0 +1,10 @@
+---
+- test/expanded_test.rb
+- test/roundtrip_test.rb
+- test/decoding_test.rb
+- test/encoding_test.rb
+- test/interoperability_test.rb
+- test/entities_test.rb
+- test/string_encodings_test.rb
+- test/html4_test.rb
+- test/xhtml1_test.rb

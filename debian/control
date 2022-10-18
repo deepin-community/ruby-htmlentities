@@ -1,0 +1,24 @@
+Source: ruby-htmlentities
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Deepak Tripathi <apenguinlinux@gmail.com>, Gunnar Wolf <gwolf@debian.org>, Caitlin Matos <caitlin.matos@zoho.com>
+Build-Depends: debhelper (>= 9~),
+               gem2deb
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-htmlentities.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-htmlentities.git
+Homepage: https://github.com/threedaymonk/htmlentities
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-htmlentities
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Ruby library for handling HTML entities
+ HTMLEntities is a simple library to facilitate encoding and decoding of named
+ (&yacute; and so on) or numerical (&#123; or &#x12a;) entities in HTML and
+ XHTML documents.
